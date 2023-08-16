@@ -9,3 +9,12 @@ export interface userModel {
   last_name: string;
   password: string;
 }
+
+export interface tradeModel {
+  id: number
+  user_id: number
+  asset: string
+  exchange: string
+  profit: number
+  timestamp: string
+}

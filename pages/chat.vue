@@ -3,7 +3,10 @@
         <div class="h-screen w-full">
             <span class="flex flex-col h-full items-centers space-y-4">
                 <div class="flex justify-between items-center">
-                    <span>Welcome To Chat</span>
+                    <div class="flex items-center">
+                        <img class="w-8 h-8 mr-2" src="https://algotest.in/logo300.png" alt="">
+                        <span>Algotest Chat</span>
+                    </div>
                     <NuxtLink to="/">
                         <a
                             class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

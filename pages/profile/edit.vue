@@ -8,7 +8,7 @@
       <img
         data-tooltip-target="gravatar"
         class="w-32 h-32 rounded-full mx-auto"
-        :src="'http://www.gravatar.com/avatar/' + md5email"
+        src="https://algotest.in/logo300.png"
         alt=""
         width="384"
         height="512"
@@ -18,8 +18,7 @@
         href="https://gravatar.com"
         target="_blank"
       >
-        Let's update your profile image! <br />Sign in gravatar.com with the
-        same email address.
+        <br />Update your new password here. Keep a safe password.
       </a>
       <div class="mb-4">
         <AtomsInputText

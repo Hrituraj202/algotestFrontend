@@ -2,6 +2,20 @@
   <AtomsDivCard>
     <form @submit="onSubmit">
       <h1 class="text-xl text-gray-700 font-bold mb-4">Sign in</h1>
+      <img
+        data-tooltip-target="gravatar"
+        class="w-20 h-20 rounded-full mx-auto"
+        src="https://algotest.in/logo300.png"
+        alt=""
+        width="384"
+        height="512"
+      />
+      <a
+        class="mb-4 inline-block align-baseline text-xs text-blue-500 hover:text-blue-800"
+        href="https://gravatar.com"
+        target="_blank"
+      >
+      </a>
       <div class="mb-4">
         <AtomsInputText
           :id="'email'"

@@ -4,8 +4,8 @@
       <h1 class="text-xl text-gray-700 font-bold mb-4">Sign up</h1>
       <img
         data-tooltip-target="gravatar"
-        class="w-32 h-32 rounded-full mx-auto"
-        :src="'http://www.gravatar.com/avatar/' + md5email"
+        class="w-20 h-20 rounded-full mx-auto"
+        src="https://algotest.in/logo300.png"
         alt=""
         width="384"
         height="512"
@@ -15,8 +15,6 @@
         href="https://gravatar.com"
         target="_blank"
       >
-        Let's update your profile image! <br />Sign in gravatar.com with the
-        same email address.
       </a>
       <div class="mb-4">
         <AtomsInputText

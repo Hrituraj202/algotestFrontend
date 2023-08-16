@@ -1,5 +1,5 @@
 import http from "./http";
-import { userModel, SigninModel } from "./model";
+import { userModel, SigninModel, tradeModel } from "./model";
 
 class ApiService {
   signup(data: userModel) {
@@ -16,6 +16,10 @@ class ApiService {
 
   getUsers(): Promise<userModel[]> {
     return http.get("/v1/users");
+  }
+
+  getTrades(user: number): Promise<tradeModel[]> {
+    return http.get("/v1/user/"+user+"/trades");
   }
 }
 
