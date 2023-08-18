@@ -50,10 +50,15 @@
                                                     <h1 class="text-slate-700 text-sm">{{item.asset}}</h1>
                                                 </td>
                                                 <td class="text-sm whitespace-nowrap">
-                                                    <!-- {{JSON.parse(item.exchanges).exchange1.price+" >> "+JSON.parse(item.exchanges).exchange2.price}} -->
+                                                    <div class="flex justify-between w-48">
+                                                        <div v-for="(exchange, key) in JSON.parse(item.exchanges)" :key="key" class="flex flex-col">
+                                                            <span class="text-sm">{{ parseFloat(exchange.price).toFixed(2)}}</span><span class="text-xs text-left">{{ key }}</span> 
+                                                        </div>
+                                                    </div>
+                                                    <!-- {{JSON.parse(item.exchanges).price+" >> "+JSON.parse(item.exchanges).price}} -->
                                                 </td>
                                                 <td class="text-sm text-blue-800 cursor-pointer underline underline-offset-2 whitespace-nowrap">
-                                                    {{item.profit_percent}} %
+                                                    $ {{item.profit}}
                                                 </td>
                                                 <td class="text-sm whitespace-nowrap">{{item.timestamp}}</td>
                                                 <td class="text-xs whitespace-nowrap">
