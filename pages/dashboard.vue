@@ -49,7 +49,9 @@
                                                     />
                                                     <h1 class="text-slate-700 text-sm">{{item.asset}}</h1>
                                                 </td>
-                                                <td class="text-sm whitespace-nowrap">{{JSON.parse(item.exchanges).exchange1.currency+" >> "+JSON.parse(item.exchanges).exchange2.currency}}</td>
+                                                <td class="text-sm whitespace-nowrap">
+                                                    <!-- {{JSON.parse(item.exchanges).exchange1.price+" >> "+JSON.parse(item.exchanges).exchange2.price}} -->
+                                                </td>
                                                 <td class="text-sm text-blue-800 cursor-pointer underline underline-offset-2 whitespace-nowrap">
                                                     {{item.profit_percent}} %
                                                 </td>
