@@ -64,8 +64,8 @@ const messages = ref([])
 // const { $socket } = useNuxtApp()
 const auth = useAuth();
 const inputValue = ref('');
-
-let $socket = new WebSocket(`ws://localhost:8001/ws?token=${String(auth.userState.value?.id)}`)
+const IPAddress = process.env?.IP_ADDRESS || "localhost"
+let $socket = new WebSocket(`ws://${IPAddress}:8001/ws?token=${String(auth.userState.value?.id)}`)
 
 onMounted(() => {
    $socket.onopen = () => {
